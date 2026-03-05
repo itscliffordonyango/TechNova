@@ -1,9 +1,4 @@
-/* ============================================
-   STYLES.CSS - EXTERNAL STYLESHEET
-   TechNova Website Styles
-   ============================================ */
 
-/* CSS Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +18,7 @@
     --transition: all 0.3s ease;
 }
 
-/* Body and Typography */
+/* Body*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -31,9 +26,12 @@ body {
     background-color: var(--bg-light);
 }
 
-/* ============================================
-   HEADER STYLES
-   ============================================ */
+/* HEADER STYLES */
+
+
+
+
+
 header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -41,7 +39,13 @@ header {
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+/* Hide navbar when scrolling down */
+.header-hidden{
+    transform: translateY(-100%);
 }
 
 .logo {
@@ -60,9 +64,9 @@ header {
     opacity: 0.9;
 }
 
-/* ============================================
+/* 
    NAVIGATION STYLES
-   ============================================ */
+    */
 nav {
     background-color: rgba(0,0,0,0.1);
     padding: 0.5rem;
@@ -104,9 +108,12 @@ nav {
     font-weight: bold;
 }
 
-/* ============================================
+
+
+
+/* 
    MAIN CONTENT STYLES
-   ============================================ */
+    */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -130,9 +137,9 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* ============================================
+/* 
    HOME PAGE SPECIFIC STYLES
-   ============================================ */
+    */
 .hero {
     background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.9)), url('../images/hero-bg.jpg');
     background-size: cover;
@@ -246,9 +253,9 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* ============================================
+/* 
    ABOUT PAGE STYLES
-   ============================================ */
+    */
 .about-hero {
     background: var(--white);
     padding: 3rem;
@@ -309,9 +316,9 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* ============================================
+/* 
    SERVICES/INNOVATIONS PAGE STYLES
-   ============================================ */
+    */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -381,9 +388,7 @@ main {
     line-height: 2;
 }
 
-/* ============================================
-   GALLERY PAGE STYLES
-   ============================================ */
+/*GALLERY PAGE STYLES*/
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -462,9 +467,9 @@ main {
     border: none;
 }
 
-/* ============================================
+/* 
    CONTACT PAGE STYLES
-   ============================================ */
+    */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -593,9 +598,9 @@ audio {
     box-shadow: var(--shadow);
 }
 
-/* ============================================
+/* 
    FOOTER STYLES
-   ============================================ */
+    */
 footer {
     background: var(--text-dark);
     color: var(--white);
@@ -609,9 +614,9 @@ footer p {
     opacity: 0.8;
 }
 
-/* ============================================
+/* 
    RESPONSIVE DESIGN - MEDIA QUERIES
-   ============================================ */
+    */
 
 /* Tablet devices (768px and below) */
 @media screen and (max-width: 768px) {
@@ -728,9 +733,9 @@ footer p {
     }
 }
 
-/* ============================================
+/* 
    UTILITY CLASSES
-   ============================================ */
+    */
 .clearfix::after {
     content: "";
     display: table;
